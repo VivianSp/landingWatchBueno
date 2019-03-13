@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 35.96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Path_2803" data-name="Path 2803" class="cls-1" d="M0-64H11.815v18.884H0Z" transform="translate(0 64)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_8441" data-name="Group 8441" transform="translate(-999 -5468.696)">
+    <g id="Ellipse_4" data-name="Ellipse 4" class="cls-2" transform="translate(999 5468.696)">
+      <ellipse class="cls-4" cx="18" cy="17.98" rx="18" ry="17.98"/>
+      <ellipse class="cls-5" cx="18" cy="17.98" rx="17.5" ry="17.48"/>
+    </g>
+    <g id="Group_2895" data-name="Group 2895" transform="translate(1011 5477.686)">
+      <g id="Group_2894" data-name="Group 2894" class="cls-3">
+        <g id="Group_2893" data-name="Group 2893" transform="translate(0 0)">
+          <path id="Path_2802" data-name="Path 2802" class="cls-1" d="M-14.092-21.881a3.189,3.189,0,0,1-3.19-3.187,3.188,3.188,0,0,1,3.19-3.186,3.188,3.188,0,0,1,3.19,3.186,3.189,3.189,0,0,1-3.19,3.187m0-9.158A5.9,5.9,0,0,0-20-25.138c0,5.635,5.908,12.983,5.908,12.983S-8.185-19.5-8.185-25.138a5.9,5.9,0,0,0-5.908-5.9" transform="translate(20 31.039)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

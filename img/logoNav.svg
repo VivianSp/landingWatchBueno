@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 125 38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fefefe;
+        font-size: 32px;
+        font-family: Helvetica-Bold, Helvetica;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.857" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f5317f"/>
+      <stop offset="1" stop-color="#ff7c6e"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_8480" data-name="Group 8480" transform="translate(-375 -28)">
+    <text id="Time" class="cls-1" transform="translate(425 59)"><tspan x="0" y="0">Time</tspan></text>
+    <g id="ic_schedule_24px">
+      <path id="ic_schedule_24px-2" data-name="ic_schedule_24px" class="cls-2" d="M19.483,2A17.5,17.5,0,1,0,37,19.5,17.491,17.491,0,0,0,19.483,2ZM19.5,33.5a14,14,0,1,1,14-14A14,14,0,0,1,19.5,33.5Zm.875-22.75H17.75v10.5l9.188,5.512L28.25,24.61l-7.875-4.673Z" transform="translate(373 26)"/>
+    </g>
+  </g>
+</svg>

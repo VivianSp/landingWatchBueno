@@ -7,6 +7,19 @@
     #txtReloj h2 {
         font-size: 3rem;
     }
+
+    .serv-icon {
+        width: 40%;
+    }
+
+    .iconProduct {
+        flex: 0 1 10%;
+        padding: 1rem;
+    }
+
+    .txtIcon {
+        flex: 0 1 80%;
+    }
 }
 
 /*Media Query de tableta*/
@@ -37,6 +50,41 @@
         align-self: flex-start;
         order: 2;
     }
+
+    .box-Feature {
+        margin: 1rem 0;
+        flex: 0 1 calc(33% - 1rem);
+    }
+
+    .serv-icon {
+        width: 35%;
+    }
+
+    .txtFeatures {
+        flex-basis: 100%;
+        margin: 0 2.5rem;
+    }
+
+    #features h2 {
+        font-size: 1.5rem;
+    }
+
+    #product h2 {
+        order: 1;
+        margin-top: 5rem;
+    }
+
+    .imgProduct {
+        flex: 0 1 calc(50% - 1rem);
+        order: 2;
+        margin: 0;
+        padding: 0;
+    }
+
+    .txtProduct {
+        flex: 0 1 calc(50% - 1rem);
+        order: 3;
+    }
 }
 
 /*Media Query de laptop*/
@@ -48,6 +96,24 @@
     #txtReloj h2 {
         font-size: 3rem;
     }
+
+    .serv-icon {
+        width: 30%;
+    }
+
+    .txtFeatures {
+        flex-basis: 100%;
+        margin: 0 3.5rem;
+    }
+
+    #features h2 {
+        font-size: 2rem;
+    }
+
+    .cajaAbout h2 {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
 }
 
 /*Media Query de Desktop*/
@@ -59,4 +125,14 @@
     #txtReloj h2 {
         font-size: 3.5rem;
     }
+
+    .txtFeatures {
+        flex-basis: 100%;
+        margin: 0 4rem;
+    }
+
+    #features h2 {
+        font-size: 3rem;
+    }
+
 }

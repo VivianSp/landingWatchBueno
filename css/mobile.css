@@ -383,6 +383,14 @@ a.btnProduct {
     text-align: center;
 }
 
+.cajaProduct h4 {
+    font-size: 1.3rem;
+}
+
+.cajaProduct h5 {
+    font-size: 1.5rem;
+}
+
 .btnProduct {
     text-decoration: none;
     color: white;

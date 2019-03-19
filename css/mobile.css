@@ -259,5 +259,94 @@ a.buy {
 }
 
 #products {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    -moz-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    -ms-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    background: rgba(104, 89, 234, 1);
+    background: -moz-linear-gradient(left, rgba(104, 89, 234, 1) 0%, rgba(106, 203, 224, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(104, 89, 234, 1)), color-stop(100%, rgba(106, 203, 224, 1)));
+    background: -webkit-linear-gradient(left, rgba(104, 89, 234, 1) 0%, rgba(106, 203, 224, 1) 100%);
+    background: -o-linear-gradient(left, rgba(104, 89, 234, 1) 0%, rgba(106, 203, 224, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(104, 89, 234, 1) 0%, rgba(106, 203, 224, 1) 100%);
+    background: linear-gradient(to right, rgba(104, 89, 234, 1) 0%, rgba(106, 203, 224, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6859ea', endColorstr='#6acbe0', GradientType=1);
+}
 
+#products .contenedor {
+    justify-content: center;
+}
+
+#products .contenedor h2 {
+    padding-top: 6rem;
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    color: white;
+}
+
+#products .contenedor p {
+    color: white;
+    text-align: center;
+}
+
+.cajaProduct {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cajaProduct img {
+    flex: 0 1 100%;
+}
+
+.cajaProduct h4, .cajaProduct h5 {
+    color: white;
+    margin: 2rem 0;
+
+}
+
+.cajaProduct h4 {
+    font-size: 1.5rem;
+}
+
+.cajaProduct h5 {
+    font-size: 2rem;
+}
+
+a.btnProduct {
+    text-decoration: none;
+    color: white;
+    width: 115px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    border: solid white 0.15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients .contenedor {
+    justify-content: center;
+}
+
+#clients .contenedor h2 {
+    font-size: 2rem;
+}
+
+.txtClients {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 2.2rem;
+}
+
+.cajaClient {
+    margin: 1.8rem;
+    flex-basis: 0 1 100%;
+}
+
+.cajaClient img {
+    flex-basis: 0 1 20%;
 }

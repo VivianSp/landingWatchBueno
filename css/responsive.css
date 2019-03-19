@@ -21,6 +21,21 @@
         flex: 0 1 80%;
     }
 
+    .nombre {
+        display: flex;
+        flex: 0 1 20%;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+
+    .campo {
+        flex: 0 1 70%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
 }
 
 /*Media Query de tableta*/
@@ -85,6 +100,13 @@
     .txtProduct {
         flex: 0 1 calc(50% - 1rem);
         order: 3;
+    }
+
+    .cajaProduct {
+        flex: 0 1 calc(33% - 1rem);
+    }
+    .box50 {
+    flex-basis: 50%;
     }
 }
 

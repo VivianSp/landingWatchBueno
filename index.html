@@ -5,10 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Watch</title>
+    <!--    libreria de iconos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="webfontkitPoppins/fontPoppins.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <!--   Librerías del Mapa Mapbox-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+
+
 </head>
 
 <body>
@@ -136,6 +145,7 @@
 
     <!--section#products.full>.contenedor>h2{Product}+p>lorem^+.cajaProduct*3>img.img-responsive[src="img/products/product$.png"]+h4.titleProduct+h5{80.00}+a.btnProduct-->
 
+    <!--
     <section id="products" class="full">
         <div class="contenedor">
             <h2>Product</h2>
@@ -161,9 +171,11 @@
         </div>
         <div class="separador"></div>
     </section>
+-->
 
     <!--    section#clients.full>.contenedor>h2{}+p{lorem}+.cajaClient*3>p{lorem}+img.img-responsive+.cajaNomClient-->
 
+    <!--
     <section id="clients" class="full">
         <div class="contenedor">
             <h2>Our Clients Say</h2>
@@ -194,9 +206,119 @@
             </div>
         </div>
     </section>
+-->
 
+    <!--
+     section#product.full>.contenedor>h2{Products}+p>lorem^+.cajaProduct*3>
+     img.img-responsive[src="img/products/product$.png"]+h4.titleProduct+h5{80.00}+a.btnProduct
+-->
+    <section id="products" class="full">
+        <div class="contenedor contenedor-products">
+            <h2 class="title">Products</h2>
+            <p class="descriptionTitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque est soluta hic maxime, ad praesentium, ullam consequatur illo. Similique, sapiente odit, magni quo provident vero blanditiis laudantium obcaecati? Perferendis, maxime.</p>
+            <div class="cajaProduct">
+                <img src="img/products/product1.png" alt="" class="img-responsive">
+                <h4 class="titleProduct">Red Beauty</h4>
+                <h5>80.00</h5>
+                <a href="" class="btnProduct">Comprar</a>
+            </div>
+            <div class="cajaProduct">
+                <img src="img/products/product2.png" alt="" class="img-responsive">
+                <h4 class="titleProduct">Red Velvet</h4>
+                <h5>80.00</h5>
+                <a href="" class="btnProduct">Comprar</a>
+            </div>
+            <div class="cajaProduct">
+                <img src="img/products/product3.png" alt="" class="img-responsive">
+                <h4 class="titleProduct">Green Exclusive</h4>
+                <h5>80.00</h5>
+                <a href="" class="btnProduct">Comprar</a>
+            </div>
+        </div>
+        <div class="separador"></div>
+    </section>
 
+    <section id="contacto" class="full">
+        <div class="contenedor">
+            <div class="box50 boxMapa">
+                <div id='map' style='width: 400px; height: 300px;'></div>
+            </div>
+            <div class="box50 boxContacto">
+                <form action="PHPMailer/contacto.php" method="post">
+                    <div class="row">
+                        <div class="nombre">
+                            <label for="nombre">Nombre</label>
+                        </div>
+                        <div class="campo">
+                            <div class="formIcon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="formInput">
+                                <input type="text" class="border-bottom" name="nombre" id="nombre" placeholder="John Doe" required>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="row">
+                        <div class="nombre"><label for="email">Email</label></div>
+                        <div class="campo">
+                            <div class="formIcon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="formInput"><input type="email" class="border-bottom" name="email" id="email" placeholder="ejemplo@gmail.com" required></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="nombre"><label for="telefono">Teléfono</label></div>
+                        <div class="campo">
+                            <div class="formIcon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="formInput"><input type="tel" class="border-bottom" name="telefono" id="telefono" placeholder="521 5678 9807" required></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="nombre"></div>
+                        <div class="campo">
+                            <div class="formIcon"><i class="fas fa-share-square"></i></div>
+                            <div class="formInput"><input type="submit" class="enviar" value="Enviar"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
 
+        </div>
+    </section>
 
-</body></html>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoidml2aWFuc3AiLCJhIjoiY2p0ZzU1MTFxMDA1YTQ2cGY3djM4bG41aSJ9.QiRdB9js6XacT0NHetmVLw';
+
+        var icon = [-99.1728776, 19.4138682]; //primero longitud y luego latitud
+
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/basic-v9',
+            zoom: 15,
+            center: icon
+        });
+
+        // create the popup
+        var popup = new mapboxgl.Popup({
+                offset: 25
+            })
+            .setText('Juan Escutia, Condesa, 06140 Ciudad de México, CMX, México.');
+
+        // create DOM element for the marker
+        var el = document.createElement('div');
+        el.id = 'marker';
+
+        // create the marker
+        new mapboxgl.Marker(el)
+            .setLngLat(icon) //Poner el nombre de la variable de la coordenada
+            .setPopup(popup) // sets a popup on this marker
+            .addTo(map);
+    </script>
+
+</body>
+
+</html>

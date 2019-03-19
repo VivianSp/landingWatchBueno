@@ -38,7 +38,7 @@ $mail->isSMTP();
 // Si la cuenta es de Hotmail
 // $mail->Host = 'smtp.live.com';
 
-$mail->Host = 'mail.studio-8.co';  // Specify main and backup SMTP servers
+$mail->Host = 'ssl://smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 //remitente
 $mail->Username = 'webdvivian@gmail.com';                 // SMTP username
@@ -47,7 +47,7 @@ $mail->SMTPSecure = 'ssl';                           // Enable TLS encryption, `
 $mail->Port = 465;                                    // TCP port to connect to
 
 // Mail que envia y valida el envio del formulario (remitente)
-$mail->setFrom('prueba@studio-8.co', 'Contacto');
+$mail->setFrom('webdvivian@gmail.com', 'Contacto');
 
 $mail->addAddress($destino, 'Ventas'); //Se puede poner el nombre del destinatario
 //Agrego mas destinos en caso de requerirlo

@@ -38,7 +38,7 @@ $mail->isSMTP();
 // Si la cuenta es de Hotmail
 // $mail->Host = 'smtp.live.com';
 
-$mail->Host = 'ssl://smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->Host = 'ssl://smtp.gmail.com';  // Specify main and backup SMTP servers, OBTENER ESTA DIRECCION DEL HOSTING
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 //remitente
 $mail->Username = 'webdvivian@gmail.com';                 // SMTP username
